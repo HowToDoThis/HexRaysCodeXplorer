@@ -1,6 +1,6 @@
 #pragma once
-#include "Common.h"
 
+#include "Common.h"
 
 enum reconstructed_place_pos_t {
 	REPLACE_SPLIT = 0,
@@ -23,7 +23,7 @@ public:
 	uval_t index;
 	reconstructed_place_pos_t position;
 	bool atOwnMembers;
-	ulong own_offset;
+	uint64_t own_offset;
 	reconstructed_place_t();
 	reconstructed_place_t(std::string n);
 	reconstructed_place_t(const reconstructed_place_t &other);
